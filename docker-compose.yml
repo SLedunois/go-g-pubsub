@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  timescale:
+    container_name: timescale
+    image: timescale/timescaledb:pg14-latest
+    environment:
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
